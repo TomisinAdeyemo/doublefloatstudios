@@ -5,11 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>double float studios</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="./Ellipse 1.png" />
+  <link rel="icon" type="image/png" href="./f.png" />
 
 </head>
 <body>
-  <header class="navbar">
+
+  <div class="loader-screen" id="loader">
+    <img src="./f.png" alt="Logo" class="logo" />
+  </div>
+
+  <header class="navbar" id="mainContent">
     <div class="container">
       <div class="nav-left">
         <a href="./index.html">HOME</a>
@@ -50,7 +55,7 @@
   </div>
 
   <div class="hero-split-image slide-in-right">
-    <img src="./df.png" alt="df STUDIOS">
+    <img src="./df dialogue 1.png" alt="df STUDIOS">
   </div>
 </section>
 
@@ -60,7 +65,7 @@
     <h1>GRAPHIC DESIGNS</h1>
     <div class="articles">
       <div class="article">
-        <img src="./5103E804-172C-4FF8-9B9D-6B0E6E14A31E 2.JPG" alt="Article 1" />
+        <img src="./bg.png" alt="Article 1" />
         <span>DF STUDIOS LOGO</span>
         <h3>The Future of Digital Art in 2025</h3>
       </div>
@@ -80,7 +85,7 @@
         <h3>A Deep Dive Into The FIFA CLUB WORLD CUP</h3>
       </div>
        <div class="article">
-        <img src="./cold world.png" alt="Article 3" />
+        <img src="./hf boxer shorts 2.png" alt="Article 3" />
         <span>HF MUAY THAI SHORTS</span>
         <h3>A Deep Dive Into The FIFA CLUB WORLD CUP</h3>
       </div>
@@ -102,17 +107,17 @@
       </div>
       <div class="article">
         <img src="./01 Free iPhone 16 Pro Mockup On Cube Stones.png" alt="Article 3" />
-        <span class="span2">FAMILY TIES</span>
+        <span class="span2">FINDERS KEEPERS</span>
         <h3>Sustainable Fashion Trends This Year</h3>
       </div>
       <div class="article">
         <img src="./Home (1).png" alt="Article 3" />
-        <span class="span2">SPORT</span>
+        <span class="span2">THE SALAD BAR</span>
         <h3>A Deep Dive Into The FIFA CLUB WORLD CUP</h3>
       </div>
        <div class="article">
         <img src="./Home.jpg" alt="Article 3" />
-        <span class="span2">SPORT</span>
+        <span class="span2">ALL-IN WEBSITE</span>
         <h3>A Deep Dive Into The FIFA CLUB WORLD CUP</h3>
       </div>
     </div>
@@ -157,9 +162,8 @@
         </div>
         <div class="footer-column">
             <ul>
-                <li><h1>MAGAZINE</h1></li>
+                <li><h1>DF STUDIOS</h1></li>
                 <li><a href="./about us.html">About Us</a></li>
-                <li><a href="./careers.html">Career</a></li>
                 <li> <a href="mailto:adeyemo.tomisin@yahoo.com">Contact Us</a></li>
             </ul>
         </div>
@@ -170,10 +174,9 @@
     <footer class="secondary-footer">
         <div class="copyright">&copy; 2025 Double Float Studios. All rights reserved.</div>
         <div class="social-links">
-            <a href="">Twitter</a>
-            <a href="">Instagram</a>
-            <a href="">Linkedin</a>
-            <a href="">Contact</a>
+            <a href="https://x.com/tomiadeyem0">Twitter</a>
+            <a href="https://www.instagram.com/doublefloat.stu/">Instagram</a>
+            <a href="mailto:adeyemo.tomisin@yahoo.com">Contact</a>
         </div>
   
 
@@ -204,6 +207,19 @@
     observer.observe(el);
   });
 </script>
+
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      const mainContent = document.getElementById('mainContent');
+
+      // Delay before hiding loader
+      setTimeout(() => {
+        loader.classList.add('fade-out');
+        mainContent.classList.add('visible');
+      }, 3000); // Show loader for 3 seconds
+    });
+  </script>
 
 
 </body>
