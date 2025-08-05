@@ -336,11 +336,23 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+.article span2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  background: blue;
+  color: #FFF;
+  padding: 0.2rem 0.5rem;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+
+}
+
 .article h3 {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 1rem;
   font-weight: 600;
-  color: #000;
+  color: #FFF;
 }
 
 /* Responsive */
@@ -450,6 +462,7 @@ h1 {
   text-decoration: none !important; /* 🧨 Forcefully remove any default underline */
   position: relative;
   transition: color 0.3s ease;
+  
 }
 
 .read-more-btn::after {
