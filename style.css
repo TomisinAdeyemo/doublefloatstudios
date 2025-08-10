@@ -268,7 +268,7 @@ h1 {
 /* Responsive layout */
 @media (max-width: 768px) {
   .hero-split {
-    margin-top: 70px;
+    margin-top: 120px;
     flex-direction: column;
     gap: -1.5rem;
     padding: 2rem 1rem;
