@@ -292,7 +292,7 @@ h1 {
   height: auto;
   display: block;
   border-radius: 1px;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-left: 0px;
 }
 }
@@ -912,5 +912,135 @@ html, body {
 
   .center-text-section h2 {
     font-size: 1.5rem;
+  }
+}
+
+.view-more-container {
+  text-align: left;   /* shift left */
+  margin-top: 30px;
+  padding-left: 10%;  /* optional: align with your section padding */
+}
+
+.view-more-btn {
+  font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 600;
+    background: red;
+    color: #FFF;
+  display: inline-block;
+  padding: 12px 28px;
+  background: red;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background: white;
+  color: black;
+  transform: scale(1.05);
+}
+
+.blog-section {
+  display: flex;
+  justify-content: center;
+  padding: 4rem 1rem;
+  background: #000;
+  color: #FFF;
+}
+
+.blog-container {
+  max-width: 800px;   /* keeps text readable */
+  text-align: center;
+}
+
+.blog-title {
+  font-size: clamp(1.8rem, 2.5vw + 1rem, 2.5rem);
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+}
+
+.blog-paragraph {
+  font-size: clamp(1rem, 1.2vw + 0.6rem, 1.2rem);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: #FFF;
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+  .blog-container {
+    padding: 0 1rem;
+  }
+}
+
+.feature-banner {
+  position: relative;
+  height: 100vh;            /* full screen height on desktop */
+  min-height: 500px;        /* fallback for small screens */
+  width: 100%;
+  overflow: hidden;
+}
+
+.banner-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* keep proportions, cover like CSS bg */
+  object-position: center;
+  display: block;
+}
+
+.banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: 5;
+}
+
+.bottom-gradient {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 35%;
+  background: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+  z-index: 6;
+}
+
+.banner-text {
+  position: relative;
+  z-index: 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 1rem;
+  color: #fff;
+  margin-top: 50px;
+}
+
+/* Responsive Typography */
+.banner-text h2 {
+  margin: 0 0 .5rem;
+  font-size: clamp(1.5rem, 4vw + 1rem, 3rem); /* scales with screen */
+  line-height: 1.2;
+}
+
+.banner-text p {
+  margin: 0;
+  font-size: clamp(1rem, 1.5vw + .6rem, 1.25rem);
+  opacity: .95;
+}
+
+/* Small screen adjustments */
+@media (max-width: 768px) {
+  .feature-banner {
+    height: 70vh;   /* reduce height on mobile */
+  }
+  .banner-text {
+    padding: 0 1.5rem;
   }
 }
