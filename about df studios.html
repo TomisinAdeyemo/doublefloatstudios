@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>double float studios</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="./f.png" />
+
+</head>
+<body>
+
+
+  <header class="navbar" id="mainContent">
+    <div class="container">
+      <div class="nav-left">
+        <a href="./index.html">HOME</a>
+      </div>
+      <div class="logo">
+  <img src="./Ellipse 1.png" alt="DOUBLE FLOAT STUDIOS">
+</div>
+
+      <div class="nav-right">
+        <a href="mailto:adeyemo.tomisin@yahoo.com">CONTACT</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="./culture.html">HOME</a>
+      <a href="mailto:adeyemo.tomisin@yahoo.com">CONTACT</a>
+    </div>
+  </header>
+
+
+
+<div class="feature-banner">
+  <img src="./df chrome-style-logo v3 2.PNG" 
+       alt="df" 
+       class="banner-img" 
+       loading="lazy">
+
+  <div class="banner-overlay" aria-hidden="true"></div>
+  <div class="bottom-gradient" aria-hidden="true"></div>
+
+  <div class="banner-text">
+    <h2>ABOUT DOUBLE FLOAT STUDIOS</h2>
+    <p>ADEYEMO OLUWATOMISIN</p>
+  </div>
+</div>
+
+<!-- Blog Section -->
+<div class="blog-section">
+  <div class="blog-container">
+    <h2 class="blog-title">DF STUDIOS</h2>
+    <p class="blog-paragraph">
+        In 2024, <span style="font-weight: 700; color: red; font-family: 'Roboto Condensed', sans-serif;">Adeyemo Oluwatomisin</span> founded a forward-thinking creative agency designed to provide comprehensive solutions 
+        in web design, graphic design, and fashion design. Though still in its developmental stages, the agency is positioned 
+        to become a dynamic force in the creative industry, driven by a clear mission to blend functionality with artistic
+        innovation.
+        The agency distinguishes itself by offering a multi-disciplinary approach, ensuring that clients benefit from cohesive 
+        and impactful brand experiences across both digital and physical platforms. From modern, responsive websites to compelling 
+        visual identities and fashion concepts that merge creativity with culture, the firm seeks to deliver work that is both 
+        distinctive and future-focused.
+        Under Oluwatomisin’s leadership, the agency aspires to grow into a trusted partner for businesses, brands, and individuals, 
+        while building a reputation for creativity, professionalism, and forward-looking design solutions. As it develops, 
+        it continues to embody the founder’s vision of a hub where art, technology, and style converge to shape the next era of 
+        creative expression.
+    </p>
+  </div>
+</div>
+
+
+
+
+  <footer class="footer">
+        <div class="footer-column">
+            <img src="./Ellipse 1.png" alt="Company Logo" style="width: 150px; height: auto;">
+        </div>
+        </div>
+        <div class="footer-column">
+            <ul>
+                <li><h1>DF STUDIOS</h1></li>
+                <li><a href="./about us.html">About Us</a></li>
+                <li> <a href="mailto:adeyemo.tomisin@yahoo.com">Contact Us</a></li>
+            </ul>
+        </div>
+    
+    </footer>
+
+
+    <footer class="secondary-footer">
+        <div class="copyright">&copy; 2025 Double Float Studios. All rights reserved.</div>
+        <div class="social-links">
+            <a href="https://x.com/tomiadeyem0">Twitter</a>
+            <a href="https://www.instagram.com/doublefloat.stu/">Instagram</a>
+            <a href="mailto:adeyemo.tomisin@yahoo.com">Contact</a>
+        </div>
+  
+
+    </footer>
+
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+  </script>
+
+<script>
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.slide-in-left, .slide-in-right').forEach(el => {
+    observer.observe(el);
+  });
+</script>
+
+  <script>
+    window.addEventListener('load', () => {
+      const loader = document.getElementById('loader');
+      const mainContent = document.getElementById('mainContent');
+
+      // Delay before hiding loader
+      setTimeout(() => {
+        loader.classList.add('fade-out');
+        mainContent.classList.add('visible');
+      }, 3000); // Show loader for 3 seconds
+    });
+  </script>
+
+
+</body>
+</html>
