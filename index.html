@@ -250,6 +250,27 @@
     });
   </script>
 
+  <script>
+  const scrollObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          scrollObserver.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.15
+    }
+  );
+
+  document.querySelectorAll('.scroll-section').forEach(section => {
+    scrollObserver.observe(section);
+  });
+</script>
+
+
 
 </body>
 </html>
