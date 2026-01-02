@@ -1047,3 +1047,34 @@ html, body {
     padding: 0 1.5rem;
   }
 }
+
+/* Scroll animation base */
+.scroll-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease-out;
+}
+
+/* When visible */
+.scroll-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Variations */
+.scroll-section.fade-up {
+  transform: translateY(40px);
+}
+
+.scroll-section.slide-left {
+  transform: translateX(-60px);
+}
+
+.scroll-section.slide-right {
+  transform: translateX(60px);
+}
+
+.scroll-section.show.slide-left,
+.scroll-section.show.slide-right {
+  transform: translateX(0);
+}
