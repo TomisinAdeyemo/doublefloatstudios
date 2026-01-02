@@ -3,7 +3,7 @@
 @import url(https://db.onlinewebfonts.com/c/340730b16e1fc32fe6c5e2ce1d020a54?family=Nohemi+Med);
 @import url(https://db.onlinewebfonts.com/c/29ddb4605533a38e086b48fa105e0d12?family=Nohemi);
 @import url('https://fonts.cdnfonts.com/css/roboto-condensed');
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/satoshi');
 
 
 :root {
@@ -21,8 +21,8 @@
 }
 
 body {
-  font-family: "Courier Prime", monospace;
-  font-weight: 400;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 500;
   font-style: normal;
   letter-spacing: -.5px;
   background: var(--background-color);
