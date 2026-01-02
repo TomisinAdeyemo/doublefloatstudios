@@ -1022,7 +1022,7 @@ html, body {
   text-align: center;
   padding: 0 1rem;
   color: #fff;
-  margin-top: 50px;
+  gap: 12px;
 }
 
 /* Responsive Typography */
@@ -1082,11 +1082,13 @@ html, body {
 
 .bw-image {
   margin-top: 16px;
-  width: 200px;       /* adjust as needed */
-  max-width: 100%;
-  filter: grayscale(100%);
+  width: 200px;
+  height: 200px;
   object-fit: cover;
+  filter: grayscale(100%);
+  border-radius: 50%;
 }
+
 
 .bw-image {
   filter: grayscale(100%);
