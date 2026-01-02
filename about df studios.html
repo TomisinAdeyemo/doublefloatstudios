@@ -138,6 +138,24 @@
     });
   </script>
 
+  <script>
+  const scrollItems = document.querySelectorAll('.scroll-left, .scroll-right');
+
+  const scrollObserver = new IntersectionObserver(
+    entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+
+  scrollItems.forEach(item => scrollObserver.observe(item));
+</script>
+
+
 
 </body>
 </html>
