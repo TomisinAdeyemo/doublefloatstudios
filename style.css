@@ -228,7 +228,7 @@ h1 {
 }
 
 .hero-split-text p {
-  font-size: 1rem;
+  font-size: .8rem;
   line-height: 1.6;
 }
 
@@ -1052,8 +1052,9 @@ html, body {
 .scroll-section {
   opacity: 0;
   transform: translateY(40px);
-  transition: all 0.8s ease-out;
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
+
 
 /* When visible */
 .scroll-section.show {
