@@ -1,276 +1,664 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Double Float Studios</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="./df blak.png" />
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Double Float — Creative Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@300;400;500;600&family=Newsreader:opsz,wght@6..72,300;6..72,400&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="icon" href="./df metal.png" type="image/png">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <div class="loader-screen" id="loader">
-    <img src="./f.png" alt="Logo" class="logo" />
+  <!-- LOADER -->
+  <div class="loader">
+
+    <div class="loader-mark">
+      <img src="./df metal.png" alt="Double Float">
+    </div>
+
+    <div class="loader-line">
+      <span></span>
+    </div>
+
+    <div class="loader-meta">
+      <span>Double Float</span>
+      <span>Creative Studio / 2026</span>
+    </div>
+
   </div>
 
-  <header class="navbar" id="mainContent">
-    <div class="container">
-      <div class="nav-left">
-        <a href="./index.html">HOME</a>
-      </div>
-      <div class="logo">
-  <img src="./Ellipse 1.png" alt="DOUBLE FLOAT STUDIOS">
-</div>
 
-      <div class="nav-right">
-        <a href="mailto:adeyemo.tomisin@yahoo.com">CONTACT</a>
-      </div>
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-    <div class="mobile-menu" id="mobile-menu">
-      <a href="./culture.html">HOME</a>
-      <a href="mailto:adeyemo.tomisin@yahoo.com">CONTACT</a>
-    </div>
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress">
+    <span></span>
+  </div>
+
+
+  <!-- NOISE -->
+  <div class="noise"></div>
+
+
+  <!-- CURSOR -->
+  <div class="cursor">
+    <span></span>
+  </div>
+
+
+  <!-- NAV -->
+  <header class="nav">
+
+    <a
+      href="#top"
+      class="wordmark"
+      aria-label="Double Float"
+    >
+      <img
+        src="./df metal.png"
+        alt="Double Float"
+      >
+    </a>
+
+    <nav>
+      <a href="#work" data-cursor="link">Work</a>
+      <a href="#about" data-cursor="link">Studio</a>
+      <a href="#capabilities" data-cursor="link">Services</a>
+      <a href="#contact" data-cursor="link">Contact</a>
+    </nav>
+
   </header>
 
-  <!-- Hero Section -->
-<section class="hero-split">
-  <div class="hero-split-text slide-in-left">
-    <h1>What is Double Float Studios?</h1>
-    <hr>
-    <p>
-      Double Float Studios is a creative hub dedicated to pushing the boundaries of art and design. 
-      We specialize in crafting unique visual experiences that resonate with audiences and elevate brands.
-    </p>
-  <a href="./about df studios.html">  
-    <button class="text-arrow-btn">
-    Learn More
-  <span class="arrow">→</span>
-  </button>
-  </a>
 
-  </div>
-
-  <div class="hero-split-image slide-in-right">
-    <img src="./df dialogue 1.png" alt="df STUDIOS">
-  </div>
-</section>
+  <main id="top">
 
 
-   <section class="latest scroll-section fade-up">
-    <h1>UI DESIGNS</h1>
-    <div class="articles">
-      <div class="article">
-        <img src="./Screenshot 2025-08-04 at 22.56.36.png" alt="Article 1" />
-        <span class="span2">1LANE</span>
-        <h3>2025</h3>
+    <!-- HERO -->
+    <section class="hero">
+
+      <div class="hero-top">
+        <span>Creative Studio / Lagos, NG</span>
       </div>
-      <div class="article">
-        <img src="./AFRE MAGAZINE.png" alt="Article 2" />
-        <span class="span2">AFRE MAGAZINE</span>
-        <h3>2025</h3>
+
+
+      <div class="hero-copy">
+
+        <h1>
+          We build brands that move between
+          <em>ideas, culture and technology.</em>
+        </h1>
+
       </div>
-      <div class="article">
-        <img src="./helios.png" alt="Article 3" />
-        <span class="span2">HELIOS</span>
-        <h3>2025</h3>
+
+
+      <div class="hero-bottom">
+        <span>Scroll to explore</span>
+        <span class="arrow">↓</span>
       </div>
-      <div class="article">
-        <img src="./MacBook Pro 14_ - 2.png" alt="Article 3" />
-        <span class="span2">BDA LEGAL</span>
-        <h3>2025</h3>
+
+    </section>
+
+
+
+    <!-- WORK -->
+    <section class="work" id="work">
+
+      <div class="section-head">
+        <span>01 — Selected work</span>
+        <span>Identity / Digital / Experience</span>
       </div>
-       <div class="article">
-        <img src="./allin.png" alt="Article 3" />
-        <span class="span2">ALL-IN WEBSITE</span>
-        <h3>204</h3>
-      </div>
-    </div>
-
-    <div class="view-more-container">
-    <a href="./all-designs.html" class="view-more-btn">VIEW MORE</a>
-  </div>
-
-  </section>
 
 
-  
-  <section class="latest scroll-section fade-up">
-    <h1>GRAPHIC DESIGNS</h1>
-    <div class="articles">
-      <div class="article">
-        <img src="./the passion of christv1.png" alt="Article 1" />
-        <span>DF STUDIOS v1</span>
-        <h3>2025</h3>
-      </div>
-      <div class="article">
-        <img src="./0c1b5c215085997.6763ef5975eec.png" alt="Article 2" />
-        <span>HIGH FASHION</span>
-        <h3>2025</h3>
-      </div>
-      <div class="article">
-        <img src="./retire.png" alt="Article 3" />
-        <span>LEADWAY ASSURANCE</span>
-        <h3>2023</h3>
-      </div>
-      <div class="article">
-        <img src="./WOMEN'S DAY.png" alt="Article 3" />
-        <span>LAUDROOM</span>
-        <h3>2024</h3>
-      </div>
-       <div class="article">
-        <img src="./wrapped.png" alt="Article 3" />
-        <span>BDA LEGAL</span>
-        <h3>2025</h3>
-      </div>
-    </div>
-     <div class="view-more-container">
-    <a href="./all-designs.html" class="view-more-btn">VIEW MORE</a>
-  </div>
-  </section>
- 
+      <!-- HELIOS -->
+      <article class="project project-large">
+
+        <a
+          href="https://heliosreserve.xyz/"
+          class="project-image"
+          data-cursor="view"
+        >
+
+          <img
+            src="./helios5.png"
+            alt="Helios project"
+          >
+
+          <span class="image-label">
+            View project ↗
+          </span>
+
+        </a>
 
 
-  
+        <div class="project-meta">
 
-  <!-- Features Section -->
-<section class="features scroll-section fade-up">
-  <h1 class="features-text">LIVE WEBSITES</h1>
-  <div class="feature-item">
-    <img src="./AFRE MAGAZINE.png" alt="Feature 1" />
-    <div class="feature-content">
-      <h1>AFRE-MAGAZINE</h1>
-      <p>
-        AFRE Magazine is your front-row seat to the pulse of entertainment and music. From breaking 
-        news to exclusive artist stories, we bring you the latest and loudest in pop culture. Powered by 
-        passion and tuned into the streets, AFRE is where the sound of now lives.
-      </p>
-      <a href="https://www.afremagazine.com/" class="read-more-btn" style="color: aliceblue;">Go To Site</a>
-    </div>
-  </div>
+          <div>
+            <span class="index">01</span>
+            <h2>Helios</h2>
+          </div>
 
-  <div class="feature-item">
-    <img src="./Screenshot 2025-08-04 at 22.56.36.png" alt="Feature 2" />
-    <div class="feature-content">
-      <h1>1LANE</h1>
-      <p>
-        1Lane is where music meets momentum. As a forward-thinking record label and culture-driven magazine, 
-        1Lane gives artists a platform to drop their latest hits and gain the spotlight they deserve. 
-        From breakout singles to in-depth features, we’re building the lane for the next wave of sound and story. 
-        Welcome to the future of music and media.
-      </p>
-      <a href="https://1laneco.com/" class="read-more-btn" style="color: aliceblue;">Go To Site</a>
-    </div>
-  </div>
 
-    <div class="feature-item">
-    <img src="./helios.png" alt="Feature 3" />
-    <div class="feature-content">
-      <h1>Helios</h1>
-      <p>
-        Helios is a next-generation crypto bank built to simplify digital finance while maintaining the trust and 
-        reliability of traditional banking. It provides a secure platform where individuals and businesses can store, 
-        manage, and grow their digital assets with confidence. By combining blockchain technology with intuitive financial 
-        tools, Helios makes crypto transactions seamless, transparent, and accessible to everyone.
-      </p>
-      <a href="https://heliosreserve.xyz/" class="read-more-btn" style="color: aliceblue;">Go To Site</a>
-    </div>
-  </div>
-  
-</section>
+          <div>
+            <span>Digital Rebrand</span>
+            <span>Brand Identity</span>
+          </div>
 
-  <footer class="footer scroll-section fade-up">
-        <div class="footer-column">
-            <img src="./Ellipse 1.png" alt="Company Logo" style="width: 150px; height: auto;">
+
+          <p>
+            Reframing a financial product through a warmer,
+            more expressive identity and a clearer digital
+            experience.
+          </p>
+
         </div>
+
+      </article>
+
+
+
+      <!-- DF STUDIOS -->
+      <article class="project project-offset">
+
+        <a
+          href="https://fetchpms.com/"
+          class="project-image"
+          data-cursor="view"
+        >
+
+          <img
+            src="./fetch-board.png"
+            alt="DF Studios project"
+          >
+
+          <span class="image-label">
+            View project ↗
+          </span>
+
+        </a>
+
+
+        <div class="project-meta">
+
+          <div>
+            <span class="index">02</span>
+            <h2>DF Studios</h2>
+          </div>
+
+
+          <div>
+            <span>Brand Identity</span>
+            <span>Product Design</span>
+          </div>
+
+
+          <p>
+            A flexible identity and digital system built
+            around clarity, motion and everyday utility.
+          </p>
+
         </div>
-        <div class="footer-column">
-            <ul>
-                <li><h1>DF STUDIOS</h1></li>
-                <li><a href="./about df studios.html">About Us</a></li>
-                <li> <a href="mailto:adeyemo.tomisin@yahoo.com">Contact Us</a></li>
-            </ul>
+
+      </article>
+
+
+
+      <!-- MACH -->
+      <article class="project project-wide">
+
+        <a
+          href="case-study.html?project=mach"
+          class="project-image"
+          data-cursor="view"
+        >
+
+          <img
+            src="./mencio icon.png"
+            alt="Mach project"
+          >
+
+          <span class="image-label">
+            View project ↗
+          </span>
+
+        </a>
+
+
+        <div class="project-meta">
+
+          <div>
+            <span class="index">03</span>
+            <h2>Mach</h2>
+          </div>
+
+
+          <div>
+            <span>Brand System</span>
+            <span>Art Direction</span>
+          </div>
+
+
+          <p>
+            A precise identity direction for a technical
+            brand, balancing speed, depth and a distinctly
+            digital character.
+          </p>
+
         </div>
-    
-    </footer>
+
+      </article>
 
 
-   <footer class="secondary-footer scroll-section fade-up">
-        <div class="copyright">&copy; 2026 Double Float Studios. All rights reserved.</div>
-        <div class="social-links">
-            <a href="https://x.com/tomiadeyem0">Twitter</a>
-            <a href="https://www.instagram.com/doublefloat.stu/">Instagram</a>
-            <a href="mailto:adeyemo.tomisin@yahoo.com">Contact</a>
+
+      <!-- MENCIO -->
+      <article class="project project-offset">
+
+        <a
+          href="case-study.html?project=mencio"
+          class="project-image"
+          data-cursor="view"
+        >
+
+          <img
+            src="./afriswap.png"
+            alt="Mencio project"
+          >
+
+          <span class="image-label">
+            View project ↗
+          </span>
+
+        </a>
+
+
+        <div class="project-meta">
+
+          <div>
+            <span class="index">04</span>
+            <h2>Mencio</h2>
+          </div>
+
+
+          <div>
+            <span>Brand Identity</span>
+            <span>Digital Experience</span>
+          </div>
+
+
+          <p>
+            Creating a cinematic visual language for an
+            emerging technology product exploring the
+            agentic web.
+          </p>
+
         </div>
-  
 
-    </footer>
-
-
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const mobileMenu = document.getElementById('mobile-menu');
-    
-    hamburger.addEventListener('click', () => {
-      mobileMenu.classList.toggle('open');
-      hamburger.classList.toggle('active');
-    });
-  </script>
-
-<script>
-  const observer = new IntersectionObserver((entries, obs) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('animate');
-        obs.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-
-  document.querySelectorAll('.slide-in-left, .slide-in-right').forEach(el => {
-    observer.observe(el);
-  });
-</script>
-
-  <script>
-    window.addEventListener('load', () => {
-      const loader = document.getElementById('loader');
-      const mainContent = document.getElementById('mainContent');
-
-      // Delay before hiding loader
-      setTimeout(() => {
-        loader.classList.add('fade-out');
-        mainContent.classList.add('visible');
-      }, 3000); // Show loader for 3 seconds
-    });
-  </script>
-
-  <script>
-  const scrollObserver = new IntersectionObserver(
-    (entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          scrollObserver.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.15
-    }
-  );
-
-  document.querySelectorAll('.scroll-section').forEach(section => {
-    scrollObserver.observe(section);
-  });
-</script>
+      </article>
 
 
+
+      <!-- ALL WORK -->
+      <a
+        class="all-work-link"
+        href="work.html"
+        data-cursor="link"
+      >
+
+        <span>
+          View all work
+        </span>
+
+        <span>
+          7+ projects <b>↗</b>
+        </span>
+
+      </a>
+
+    </section>
+
+
+
+    <!-- STUDIO -->
+    <section class="about" id="about">
+
+      <div class="section-head">
+        <span>02 — Studio</span>
+        <span>Independent creative studio</span>
+      </div>
+
+
+      <div class="about-grid">
+
+        <h2>
+          We create at the intersection of
+          <em>identity, culture and technology.</em>
+        </h2>
+
+
+        <div class="about-copy">
+
+          <p>
+            Double Float is an independent creative studio
+            working across brand identity, digital experiences
+            and creative direction.
+          </p>
+
+
+          <p>
+            We help ambitious ideas become brands people can
+            recognise, understand and remember — from the first
+            strategic thought to the final digital experience.
+          </p>
+
+
+          <p>
+            Our work moves between disciplines, formats and
+            industries. The goal stays the same: make the idea
+            clearer, the system stronger and the experience
+            impossible to ignore.
+          </p>
+
+
+          <a
+            href="#contact"
+            class="text-link"
+            data-cursor="link"
+          >
+            Start a project →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CAPABILITIES -->
+    <section
+      class="capabilities"
+      id="capabilities"
+    >
+
+      <div class="section-head">
+        <span>03 — Services</span>
+        <span>What we do</span>
+      </div>
+
+
+      <div class="capability-list">
+
+
+        <!-- SERVICE 01 -->
+        <div>
+
+          <span>01</span>
+
+          <h3>
+            Brand Strategy
+          </h3>
+
+          <p>
+            Positioning, naming, creative direction,
+            brand architecture and verbal identity.
+          </p>
+
+        </div>
+
+
+
+        <!-- SERVICE 02 -->
+        <div>
+
+          <span>02</span>
+
+          <h3>
+            Brand Identity
+          </h3>
+
+          <p>
+            Visual systems, art direction, typography,
+            colour, guidelines and complete brand worlds.
+          </p>
+
+        </div>
+
+
+
+        <!-- SERVICE 03 -->
+        <div>
+
+          <span>03</span>
+
+          <h3>
+            Digital Experiences
+          </h3>
+
+          <p>
+            Websites, product experiences, design systems,
+            interaction, motion and digital direction.
+          </p>
+
+        </div>
+
+
+
+        <!-- SERVICE 04 -->
+        <div>
+
+          <span>04</span>
+
+          <h3>
+            Creative Direction
+          </h3>
+
+          <p>
+            Campaign concepts, launch systems, content
+            direction and visual storytelling.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- PROCESS -->
+    <section class="process">
+
+      <div class="section-head">
+        <span>04 — Approach</span>
+        <span>How we work</span>
+      </div>
+
+
+      <div class="process-grid">
+
+
+        <div class="process-intro">
+
+          <h2>
+            Good work starts with
+            <em>good questions.</em>
+          </h2>
+
+        </div>
+
+
+        <div class="process-steps">
+
+
+          <div>
+
+            <span>01</span>
+
+            <div>
+              <h3>Understand</h3>
+
+              <p>
+                We unpack the business, audience, context
+                and opportunity behind the brief.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div>
+
+            <span>02</span>
+
+            <div>
+              <h3>Define</h3>
+
+              <p>
+                We establish the strategic and creative
+                direction that gives the project focus.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div>
+
+            <span>03</span>
+
+            <div>
+              <h3>Build</h3>
+
+              <p>
+                We turn the direction into a coherent
+                identity, experience and system.
+              </p>
+            </div>
+
+          </div>
+
+
+          <div>
+
+            <span>04</span>
+
+            <div>
+              <h3>Launch</h3>
+
+              <p>
+                We create the tools and digital experiences
+                needed to take the brand into the world.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- CONTACT -->
+    <section
+      class="contact"
+      id="contact"
+    >
+
+      <div class="contact-intro">
+
+        <span class="section-number">
+          05
+        </span>
+
+
+        <h2>
+          Let's make something
+          <em>worth remembering.</em>
+        </h2>
+
+      </div>
+
+
+      <div class="contact-bottom">
+
+
+        <a
+          href="mailto:hello@doublefloat.studio"
+          class="email"
+          data-cursor="link"
+        >
+          hello@doublefloat.studio
+        </a>
+
+
+        <div class="socials">
+
+          <a
+            href="#"
+            data-cursor="link"
+          >
+            Instagram ↗
+          </a>
+
+          <a
+            href="#"
+            data-cursor="link"
+          >
+            LinkedIn ↗
+          </a>
+
+          <a
+            href="#"
+            data-cursor="link"
+          >
+            Behance ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <span>
+      © <span id="year"></span>
+      Double Float
+    </span>
+
+
+    <span>
+      Independent creative studio / Lagos, NG
+    </span>
+
+  </footer>
+
+
+
+  <script src="script.js"></script>
 
 </body>
+
 </html>
