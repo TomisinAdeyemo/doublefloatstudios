@@ -148,7 +148,7 @@ img {
 
   color: #555;
 
-  font-size: 8px;
+  font-size: 14px;
 }
 
 @keyframes load {
@@ -265,7 +265,7 @@ img {
   justify-content: space-between;
   align-items: flex-start;
 
-  font-size: 10px;
+  font-size: 14px;
 
   mix-blend-mode: difference;
 }
@@ -292,7 +292,7 @@ img {
 .wordmark img {
   display: block;
 
-  width: 65px;
+  width: 45px;
   height: auto;
 
   object-fit: contain;
