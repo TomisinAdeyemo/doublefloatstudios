@@ -318,7 +318,7 @@ img {
 @media (max-width: 700px) {
 
   .wordmark img {
-    width: 78px;
+    width: 48px;
   }
 
 }
@@ -1075,7 +1075,7 @@ img {
 
 .process-steps span,
 .process-steps p {
-  font-size: 14px;
+  font-size: 10px;
 
   color: #666;
 }
